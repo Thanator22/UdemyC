@@ -1,29 +1,33 @@
-import { Fragment, useState } from 'react';
+import { useState } from "react";
+import Container from "react-bootstrap/Container";
 
-import Header from './components/Layout/Header';
-import Meals from './components/Meals/Meals';
-import Cart from './components/Cart/Cart';
+import OrderConfirmation from "./pages/confirmation/OrderConfirmation";
+import OrderEntry from "./pages/entry/OrderEntry";
+import OrderSummary from "./pages/summary/OrderSummary";
 
-function App() {
-  const [cartIsShown, setCartIsShown] = useState(false);
+import { OrderDetailsProvider } from "./contexts/OrderDetails";
 
-  const showCartHandler = () => {
-    setCartIsShown(true);
-  };
+export default function App() {
+  // orderPhase needs to be 'inProgress', 'review' or 'completed'
+  const [orderPhase, setOrderPhase] = useState("inProgress");
 
-  const hideCartHandler = () => {
-    setCartIsShown(false);
-  };
+  let Component = OrderEntry; // default to order page
+  switch (orderPhase) {
+    case "inProgress":
+      Component = OrderEntry;
+      break;
+    case "review":
+      Component = OrderSummary;
+      break;
+    case "completed":
+      Component = OrderConfirmation;
+      break;
+    default:
+  }
 
   return (
-    <Fragment>
-      {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onShowCart={showCartHandler} />
-      <main>
-        <Meals />
-      </main>
-    </Fragment>
+    <OrderDetailsProvider>
+      <Container>{<Component setOrderPhase={setOrderPhase} />}</Container>
+    </OrderDetailsProvider>
   );
 }
-
-export default App;

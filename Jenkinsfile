@@ -7,6 +7,11 @@ pipeline {
                 sh "sudo npm run build"
             }
         }
+        stage('Execute Tests') {
+            steps {
+                  sh "npm run test -- --coverage . --watchAll=false"
+            }	    
+	    } 
         stage('ExecuteSonarQubeReport') {
             steps {
                   sh "npm run sonar"

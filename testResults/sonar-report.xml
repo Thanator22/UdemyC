@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unitTest version="1">
+    <file path="C:\Users\maynegi\Documents\Git clones\udem\udemy-TESTING-LIBRARY\finished-projects\sundaes-on-demand\src\pages\summary\tests\SummaryForm.test.jsx">
+        <testCase name="Initial conditions" duration="482"/>
+        <testCase name="Checkbox enables button on first click and disables on second click" duration="377"/>
+        <testCase name="popover responds to hover" duration="487"/>
+    </file>
+    <file path="C:\Users\maynegi\Documents\Git clones\udem\udemy-TESTING-LIBRARY\finished-projects\sundaes-on-demand\src\pages\entry\tests\ScoopOption.test.jsx">
+        <testCase name="indicate if scoop count is non-int or out of range" duration="1086"/>
+    </file>
+    <file path="C:\Users\maynegi\Documents\Git clones\udem\udemy-TESTING-LIBRARY\finished-projects\sundaes-on-demand\src\pages\confirmation\tests\OrderConfirmation.test.jsx">
+        <testCase name="error response from server for submitting order" duration="411"/>
+    </file>
+    <file path="C:\Users\maynegi\Documents\Git clones\udem\udemy-TESTING-LIBRARY\finished-projects\sundaes-on-demand\src\pages\entry\tests\Options.test.jsx">
+        <testCase name="displays image for each scoop option from server" duration="488"/>
+        <testCase name="Displays image for each toppings option from server" duration="128"/>
+        <testCase name="don&apos;t update total if scoops input is invalid" duration="948"/>
+    </file>
+    <file path="C:\Users\maynegi\Documents\Git clones\udem\udemy-TESTING-LIBRARY\finished-projects\sundaes-on-demand\src\pages\entry\tests\OrderEntry.test.jsx">
+        <testCase name="handles error for scoops and toppings routes" duration="539"/>
+        <testCase name="disable order button if there are no scoops ordered" duration="603"/>
+    </file>
+    <file path="C:\Users\maynegi\Documents\Git clones\udem\udemy-TESTING-LIBRARY\finished-projects\sundaes-on-demand\src\tests\orderPhase.test.jsx">
+        <testCase name="Order phases for happy path" duration="2631"/>
+        <testCase name="Toppings header is not on summary page if no toppings ordered" duration="670"/>
+    </file>
+    <file path="C:\Users\maynegi\Documents\Git clones\udem\udemy-TESTING-LIBRARY\finished-projects\sundaes-on-demand\src\pages\entry\tests\totalUpdates.test.jsx">
+        <testCase name="update scoop subtotal when scoops change" duration="866"/>
+        <testCase name="update toppings subtotal when toppings change" duration="610"/>
+        <testCase name="grand total grand total updates properly if scoop is added first" duration="562"/>
+        <testCase name="grand total grand total updates properly if topping is added first" duration="520"/>
+        <testCase name="grand total grand total updates properly if item is removed" duration="553"/>
+    </file>
+</unitTest>
