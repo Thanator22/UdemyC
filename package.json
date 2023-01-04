@@ -15,21 +15,9 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "jest --coverage",
+		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"sonar": "node_modules/sonar-scanner/bin/sonar-scanner"
-	},
-	"jest": {
-		"testEnvironment": "node",
-		"coveragePathIgnorePatterns": [
-			"/node_modules/"
-		],
-		"testResultsProcessor": "jest-sonar-reporter"
-	},
-	"jestSonar": {
-		"reportPath": "coverage",
-		"reportFile": "test-reporter.xml",
-		"indent": 4
 	},
 	"eslintConfig": {
 		"extends": [

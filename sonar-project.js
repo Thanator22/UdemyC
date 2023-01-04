@@ -1,12 +1,12 @@
 const sonarqubeScanner = require("sonarqube-scanner");
 sonarqubeScanner(
 	{
-		serverUrl: "http://localhost:9000",
+		serverUrl: "http://34.234.204.97:9000",
 		projectKey: "react-project",
 		projectName: "react-project",
 		login: "admin",
-		password: "Admin",
-		token: "sqp_715b5fc53a750722ca203cf9b160907a6e84ab97",
+		password: "admin",
+		token: "caf930c9c60802114aae2656cd91d40e8453a70e",
 		options: {
 			"sonar.sources": "src",
 			"sonar.tests": "src",
