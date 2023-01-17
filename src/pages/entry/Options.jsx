@@ -16,7 +16,7 @@ export default function Options({ optionType }) {
 	// optionType is 'scoops' or 'toppings
 	useEffect(() => {
 		axios
-			.get(`http://3.90.84.179:3030/${optionType}`)
+			.get(`http://100.26.163.146:3030/${optionType}`)
 			.then((response) => setItems(response.data))
 			.catch((error) => setError(true));
 	}, [optionType]);

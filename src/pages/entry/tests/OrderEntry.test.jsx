@@ -10,10 +10,10 @@ import userEvent from "@testing-library/user-event";
 
 test("handles error for scoops and toppings routes", async () => {
 	server.resetHandlers(
-		rest.get("http://3.90.84.179:3030/scoops", (req, res, ctx) =>
+		rest.get("http://100.26.163.146:3030/scoops", (req, res, ctx) =>
 			res(ctx.status(500))
 		),
-		rest.get("http://3.90.84.179:3030/toppings", (req, res, ctx) =>
+		rest.get("http://100.26.163.146:3030/toppings", (req, res, ctx) =>
 			res(ctx.status(500))
 		)
 	);
