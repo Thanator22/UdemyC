@@ -30,7 +30,7 @@ export default function ScoopOptions({ name, imagePath }) {
 		<Col xs={12} sm={6} md={4} lg={3} style={{ textAlign: "center" }}>
 			<img
 				style={{ width: "75%" }}
-				src={`http://100.26.163.146:3030/${imagePath}`}
+				src={`http://54.90.34.166:3030/${imagePath}`}
 				alt={`${name} scoop`}
 			/>
 			<Form.Group

@@ -13,7 +13,7 @@ export default function OrderConfirmation({ setOrderPhase }) {
 		axios
 			// in a real app we would get order details from context
 			// and send with POST
-			.post(`http://100.26.163.146:3030/order`)
+			.post(`http://54.90.34.166:3030/order`)
 			.then((response) => {
 				setOrderNumber(response.data.orderNumber);
 			})

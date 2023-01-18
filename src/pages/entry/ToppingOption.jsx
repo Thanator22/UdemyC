@@ -12,7 +12,7 @@ export default function ToppingOption({ name, imagePath }) {
 		<Col xs={6} sm={4} md={3} lg={2} style={{ textAlign: "center" }}>
 			<img
 				style={{ width: "75%" }}
-				src={`http://100.26.163.146:3030/${imagePath}`}
+				src={`http://54.90.34.166:3030/${imagePath}`}
 				alt={`${name} topping`}
 			/>
 			<Form.Group controlId={`${name}-topping-checkbox`}>
